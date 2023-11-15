@@ -37,7 +37,7 @@ func (server *KCPServer) Start() {
 
 func (server *KCPServer) init() {
 	//ln, err := net.Listen("kcp", server.Addr)
-	pass := pbkdf2.Key([]byte(conf.Key), []byte(kcp.SALT), 4096, 32, sha1.New)
+	pass := pbkdf2.Key([]byte(conf.Key), []byte(conf.SALT), 4096, 32, sha1.New)
 	var block kcp.BlockCrypt
 	switch conf.Crypt {
 	case "sm4":
