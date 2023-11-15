@@ -4,6 +4,7 @@ import (
 	"github.com/po2656233/goleaf/chanrpc"
 	"github.com/po2656233/goleaf/log"
 	"github.com/po2656233/goleaf/network"
+	"io"
 	"net"
 	"reflect"
 	"time"
@@ -93,7 +94,9 @@ func (a *agent) Run() {
 	for {
 		data, err := a.conn.ReadMsg()
 		if err != nil {
-			log.Debug("read message: %v", err)
+			if err != io.EOF {
+				log.Debug("read message: %v", err)
+			}
 			break
 		}
 
