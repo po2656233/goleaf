@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e2d6274f-2b3f-4b26-a8c7-33ad19c53552" name="变更" comment="">
+      <change afterPath="$PROJECT_DIR$/network/kcp_client.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/network/kcp_conn.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/network/kcp_server.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/conf.go" beforeDir="false" afterPath="$PROJECT_DIR$/conf/conf.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/tcp_msg.go" beforeDir="false" afterPath="$PROJECT_DIR$/network/net_msg.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/tcp_server.go" beforeDir="false" afterPath="$PROJECT_DIR$/network/tcp_server.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/ws_conn.go" beforeDir="false" afterPath="$PROJECT_DIR$/network/ws_conn.go" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" url="file://D:/Go/go1.19.5" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../../GoPrj/src/pkg/mod/github.com/gorilla/websocket@v1.5.1/conn.go" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/network/net_msg.go" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://D:/Go/go1.19.5/src/net/net.go" root0="SKIP_INSPECTION" />
+    <setting file="file://D:/Go/go1.19.5/src/net/sockopt_posix.go" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/network/ws_conn.go" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/conf/conf.go" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/log/log.go" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/network/kcp_client.go" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/network/kcp_server.go" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/go/example_test.go" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/network/tcp_conn.go" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/network/kcp_conn.go" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/go/go.go" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/leaf.go" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../GoPrj/src/pkg/mod/golang.org/x/net@v0.10.0/internal/socket/rawconn.go" root0="SKIP_INSPECTION" />
+    <setting file="file://D:/Go/go1.19.5/src/crypto/sha1/sha1.go" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/../../GoPrj/src/pkg/mod/github.com/xtaci/kcp-go@v5.4.20+incompatible/sess_test.go" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/version.go" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/network/kcp/simpleServer/server.go" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../GoPrj/src/pkg/mod/github.com/xtaci/kcp-go@v5.4.20+incompatible/sess.go" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/chanrpc/chanrpc.go" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://D:/Go/go1.19.5/src/net/tcpsock.go" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/chanrpc/example_test.go" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/network/kcp/server/main.go" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2YDnhkVCNSokbj1EgL362s9FM1r" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.format.on.save.advertiser.fired" value="true" />
+    <property name="go.formatter.settings.were.checked" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.watchers.conflict.with.on.save.actions.check.performed" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
+</project>

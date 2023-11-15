@@ -4,6 +4,8 @@ import (
 	"errors"
 	"github.com/gorilla/websocket"
 	"github.com/po2656233/goleaf/log"
+	"time"
+
 	//"time"
 	"net"
 	"sync"
@@ -50,7 +52,7 @@ func newWSConn(conn *websocket.Conn, pendingWriteNum int, maxMsgLen uint32) *WSC
 }
 
 func (wsConn *WSConn) doDestroy() {
-	wsConn.conn.UnderlyingConn().(*net.TCPConn).SetLinger(0)
+	wsConn.conn.NetConn().(*net.TCPConn).SetLinger(0)
 	wsConn.conn.Close()
 
 	if !wsConn.closeFlag {
@@ -101,7 +103,7 @@ func (wsConn *WSConn) ReadMsg() ([]byte, error) {
 	//	return nil, err
 	//}
 	_, b, err := wsConn.conn.ReadMessage()
-	//wsConn.conn.SetReadDeadline(time.Time{})
+	wsConn.conn.SetReadDeadline(time.Time{})
 	return b, err
 }
 
