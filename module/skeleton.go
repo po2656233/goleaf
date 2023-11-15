@@ -2,8 +2,7 @@ package module
 
 import (
 	"time"
-
-	g "github.com/name5566/leaf/go"
+	"github.com/name5566/leaf/go"
 	"github.com/po2656233/goleaf/chanrpc"
 	"github.com/po2656233/goleaf/console"
 	"github.com/po2656233/goleaf/timer"
