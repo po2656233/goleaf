@@ -2,6 +2,8 @@ package network
 
 import (
 	"github.com/po2656233/goleaf/log"
+	"github.com/po2656233/goleaf/conf"
+	"github.com/xtaci/kcp-go"
 	"net"
 	"sync"
 	"time"
