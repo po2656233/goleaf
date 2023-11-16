@@ -2,7 +2,6 @@ package network
 
 import (
 	"github.com/po2656233/goleaf/log"
-	"github.com/xtaci/kcp-go"
 	"net"
 	"sync"
 	"time"
@@ -23,12 +22,16 @@ func newKCPConn(conn *kcp.UDPSession, pendingWriteNum int, msgParser *MsgParser)
 	kcpConn.conn = conn
 	kcpConn.writeChan = make(chan []byte, pendingWriteNum)
 	kcpConn.msgParser = msgParser
-	kcpConn.conn.SetWriteDelay(false) // 不延迟
+	// 是否写延迟
+	kcpConn.conn.SetWriteDelay(conf.WriteDelay)
 	//nodelay ：是否启用 nodelay模式，0不启用；1启用。
 	//interval ：协议内部工作的 interval，单位毫秒，比如 10ms或者 20ms
 	//resend ：快速重传模式，默认0关闭，可以设置2（2次ACK跨越将会直接重传）
-	//kcpConn.conn.SetNoDelay(0, 40, 0, 0) //普通模式
-	kcpConn.conn.SetNoDelay(1, 10, 2, 1) //极速模式
+	if conf.Fast {
+		kcpConn.conn.SetNoDelay(1, 10, 2, 1) //极速模式
+	} else {
+		kcpConn.conn.SetNoDelay(0, 40, 0, 0) //普通模式
+	}
 
 	go func() {
 		for b := range kcpConn.writeChan {

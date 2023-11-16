@@ -19,8 +19,10 @@ var (
 	PendingWriteNum int
 
 	// kcp
-	DSCP  int = 46        // 差分服务代码点
-	SALT      = "goleaf"  // 加盐
-	Key       = "kcp-key" // 密钥
-	Crypt     = "salsa20" // 加密方式 如果此项为空,则SALT|key无效
+	Fast           = false
+	WriteDelay     = false
+	DSCP       int = 46        // 差分服务代码点
+	SALT           = "goleaf"  // 加盐
+	Key            = "kcp-key" // 密钥
+	Crypt          = "salsa20" // 加密方式 如果此项为空,则SALT|key无效
 )

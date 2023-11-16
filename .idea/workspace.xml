@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2d6274f-2b3f-4b26-a8c7-33ad19c53552" name="变更" comment="">
-      <change beforePath="$PROJECT_DIR$/module/skeleton.go" beforeDir="false" afterPath="$PROJECT_DIR$/module/skeleton.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/conf.go" beforeDir="false" afterPath="$PROJECT_DIR$/conf/conf.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,28 +28,36 @@
     <option name="indexEntireGoPath" value="false" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://D:/Go/go1.19.5/src/net/sockopt_posix.go" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/go.mod" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/conf/conf.go" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/log/log.go" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/go/example_test.go" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/go/go.go" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/util/map.go" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/util/deepcopy.go" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/util/rand.go" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/module/skeleton.go" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/chanrpc/chanrpc.go" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://D:/Go/go1.19.5/src/net/tcpsock.go" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/chanrpc/example_test.go" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../GoPrj/src/pkg/mod/github.com/gorilla/websocket@v1.5.1/conn.go" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/network/net_msg.go" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://D:/Go/go1.19.5/src/net/net.go" root0="SKIP_INSPECTION" />
-    <setting file="file://D:/Go/go1.19.5/src/net/sockopt_posix.go" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/network/ws_conn.go" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/conf/conf.go" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/log/log.go" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/recordfile/example_test.go" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/network/kcp_client.go" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/recordfile/test.txt" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/network/kcp_server.go" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/go/example_test.go" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/recordfile/recordfile.go" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/network/tcp_conn.go" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/network/kcp_conn.go" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/go/go.go" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/leaf.go" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../GoPrj/src/pkg/mod/golang.org/x/net@v0.10.0/internal/socket/rawconn.go" root0="SKIP_INSPECTION" />
     <setting file="file://D:/Go/go1.19.5/src/crypto/sha1/sha1.go" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/../../GoPrj/src/pkg/mod/github.com/xtaci/kcp-go@v5.4.20+incompatible/sess_test.go" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/version.go" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/version.go" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../GoPrj/src/pkg/mod/github.com/xtaci/kcp-go@v5.4.20+incompatible/sess.go" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/chanrpc/chanrpc.go" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://D:/Go/go1.19.5/src/net/tcpsock.go" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/chanrpc/example_test.go" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
