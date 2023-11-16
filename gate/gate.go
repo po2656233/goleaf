@@ -94,6 +94,9 @@ func (gate *Gate) Run(closeSig chan bool) {
 	if tcpServer != nil {
 		tcpServer.Start()
 	}
+	if kcpServer != nil {
+		kcpServer.Start()
+	}
 	<-closeSig
 	if wsServer != nil {
 		wsServer.Close()
