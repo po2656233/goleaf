@@ -27,6 +27,9 @@ type Gate struct {
 	TCPAddr      string
 	LenMsgLen    int
 	LittleEndian bool
+
+	// tcp
+	KCPAddr string
 }
 
 func (gate *Gate) Run(closeSig chan bool) {
@@ -67,6 +70,24 @@ func (gate *Gate) Run(closeSig chan bool) {
 		}
 	}
 
+	var kcpServer *network.KCPServer
+	if gate.KCPAddr != "" {
+		kcpServer = new(network.KCPServer)
+		kcpServer.Addr = gate.KCPAddr
+		kcpServer.MaxConnNum = gate.MaxConnNum
+		kcpServer.PendingWriteNum = gate.PendingWriteNum
+		kcpServer.LenMsgLen = gate.LenMsgLen
+		kcpServer.MaxMsgLen = gate.MaxMsgLen
+		kcpServer.LittleEndian = gate.LittleEndian
+		kcpServer.NewAgent = func(conn *network.KCPConn) network.Agent {
+			a := &agent{conn: conn, gate: gate}
+			if gate.AgentChanRPC != nil {
+				gate.AgentChanRPC.Go("NewAgent", a)
+			}
+			return a
+		}
+	}
+
 	if wsServer != nil {
 		wsServer.Start()
 	}
@@ -79,6 +100,9 @@ func (gate *Gate) Run(closeSig chan bool) {
 	}
 	if tcpServer != nil {
 		tcpServer.Close()
+	}
+	if kcpServer != nil {
+		kcpServer.Close()
 	}
 }
 
